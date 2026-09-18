@@ -16,7 +16,7 @@ const serverProcess = spawn('node', ['server/index.js'], {
 });
 
 // Start frontend vite client
-const clientProcess = spawn('npx', ['vite', '--config', 'config/vite.config.ts'], {
+const clientProcess = spawn('npx', ['vite'], {
   cwd: projectRoot,
   stdio: 'inherit',
   shell: true,
